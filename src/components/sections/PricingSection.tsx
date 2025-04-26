@@ -168,119 +168,176 @@ const PricingSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Additional Services */}
+        {/* Additional Services - UPDATED UI */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-white">
             🛠️ Additional Services (Add-ons)
           </h3>
           
-          <div className="overflow-x-auto">
-            <table className="min-w-full bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-              <thead className="bg-gray-100 dark:bg-gray-700">
-                <tr>
-                  <th className="py-3 px-6 text-left text-gray-800 dark:text-white font-bold">Service</th>
-                  <th className="py-3 px-6 text-left text-gray-800 dark:text-white font-bold">Price (INR)</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
-                <tr className="hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <td className="py-3 px-6 text-gray-700 dark:text-gray-300">Monthly Maintenance</td>
-                  <td className="py-3 px-6 text-gray-700 dark:text-gray-300">₹2,000 – ₹10,000</td>
-                </tr>
-                <tr className="hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <td className="py-3 px-6 text-gray-700 dark:text-gray-300">Hosting & Domain Setup</td>
-                  <td className="py-3 px-6 text-gray-700 dark:text-gray-300">₹2,000 (one-time)</td>
-                </tr>
-                <tr className="hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <td className="py-3 px-6 text-gray-700 dark:text-gray-300">Logo Design</td>
-                  <td className="py-3 px-6 text-gray-700 dark:text-gray-300">₹1,500</td>
-                </tr>
-                <tr className="hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <td className="py-3 px-6 text-gray-700 dark:text-gray-300">SEO Setup</td>
-                  <td className="py-3 px-6 text-gray-700 dark:text-gray-300">₹3,000 – ₹7,000</td>
-                </tr>
-                <tr className="hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <td className="py-3 px-6 text-gray-700 dark:text-gray-300">WhatsApp Chat Integration</td>
-                  <td className="py-3 px-6 text-gray-700 dark:text-gray-300">₹1,000</td>
-                </tr>
-                <tr className="hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <td className="py-3 px-6 text-gray-700 dark:text-gray-300">Google Maps Integration</td>
-                  <td className="py-3 px-6 text-gray-700 dark:text-gray-300">₹500</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="p-5 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-750">
+                <h4 className="font-semibold text-gray-800 dark:text-white">Monthly Maintenance</h4>
+              </div>
+              <div className="p-5">
+                <p className="text-xl font-bold text-indigo-600 dark:text-indigo-400">₹2,000 – ₹10,000</p>
+              </div>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="p-5 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-750">
+                <h4 className="font-semibold text-gray-800 dark:text-white">Hosting & Domain Setup</h4>
+              </div>
+              <div className="p-5">
+                <p className="text-xl font-bold text-indigo-600 dark:text-indigo-400">₹2,000 <span className="text-sm font-normal text-gray-500 dark:text-gray-400">(one-time)</span></p>
+              </div>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="p-5 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-750">
+                <h4 className="font-semibold text-gray-800 dark:text-white">Logo Design</h4>
+              </div>
+              <div className="p-5">
+                <p className="text-xl font-bold text-indigo-600 dark:text-indigo-400">₹1,500</p>
+              </div>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="p-5 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-750">
+                <h4 className="font-semibold text-gray-800 dark:text-white">SEO Setup</h4>
+              </div>
+              <div className="p-5">
+                <p className="text-xl font-bold text-indigo-600 dark:text-indigo-400">₹3,000 – ₹7,000</p>
+              </div>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="p-5 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-750">
+                <h4 className="font-semibold text-gray-800 dark:text-white">WhatsApp Chat Integration</h4>
+              </div>
+              <div className="p-5">
+                <p className="text-xl font-bold text-indigo-600 dark:text-indigo-400">₹1,000</p>
+              </div>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="p-5 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-750">
+                <h4 className="font-semibold text-gray-800 dark:text-white">Google Maps Integration</h4>
+              </div>
+              <div className="p-5">
+                <p className="text-xl font-bold text-indigo-600 dark:text-indigo-400">₹500</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Payment Terms */}
+        {/* Payment Terms - UPDATED UI */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-white">
             💳 Payment Terms
           </h3>
           
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <svg className="w-5 h-5 text-indigo-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <span className="text-gray-700 dark:text-gray-300">50% advance to start the work</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="w-5 h-5 text-indigo-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <span className="text-gray-700 dark:text-gray-300">50% on final delivery</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="w-5 h-5 text-indigo-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <span className="text-gray-700 dark:text-gray-300">Payments accepted via <strong>UPI / Bank Transfer / Razorpay</strong></span>
-              </li>
-            </ul>
+          <div className="max-w-3xl mx-auto bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg shadow-lg p-8 text-white">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="flex flex-col items-center text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+                <div className="w-16 h-16 flex items-center justify-center rounded-full bg-white/20 mb-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <h4 className="text-lg font-semibold mb-2">50% Advance</h4>
+                <p className="text-sm text-white/80">Required to start the work</p>
+              </div>
+              
+              <div className="flex flex-col items-center text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+                <div className="w-16 h-16 flex items-center justify-center rounded-full bg-white/20 mb-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <h4 className="text-lg font-semibold mb-2">50% on Delivery</h4>
+                <p className="text-sm text-white/80">Due upon final delivery</p>
+              </div>
+              
+              <div className="flex flex-col items-center text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+                <div className="w-16 h-16 flex items-center justify-center rounded-full bg-white/20 mb-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                  </svg>
+                </div>
+                <h4 className="text-lg font-semibold mb-2">Payment Methods</h4>
+                <p className="text-sm text-white/80">UPI / Bank Transfer / Razorpay</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Why Choose Me */}
+        {/* Why Choose Me - UPDATED UI */}
         <div>
           <h3 className="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-white">
             ✨ Why Choose Me?
           </h3>
           
-          <div className="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg shadow-lg p-8 text-white">
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <li className="flex items-start">
-                <svg className="w-5 h-5 text-yellow-300 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform hover:scale-105">
+              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900 mb-4">
+                <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                 </svg>
-                <span>Fast turnaround with high-quality work</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="w-5 h-5 text-yellow-300 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </div>
+              <h4 className="text-lg font-semibold mb-2 text-gray-800 dark:text-white">Fast Turnaround</h4>
+              <p className="text-gray-600 dark:text-gray-300">High-quality work delivered within agreed timeframes</p>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform hover:scale-105">
+              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900 mb-4">
+                <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
                 </svg>
-                <span>Transparent and regular communication</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="w-5 h-5 text-yellow-300 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </div>
+              <h4 className="text-lg font-semibold mb-2 text-gray-800 dark:text-white">Clear Communication</h4>
+              <p className="text-gray-600 dark:text-gray-300">Transparent and regular updates throughout the project</p>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform hover:scale-105">
+              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900 mb-4">
+                <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                 </svg>
-                <span>Clean, secure, and responsive code</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="w-5 h-5 text-yellow-300 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </div>
+              <h4 className="text-lg font-semibold mb-2 text-gray-800 dark:text-white">Clean Code</h4>
+              <p className="text-gray-600 dark:text-gray-300">Secure, responsive, and well-structured codebase</p>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform hover:scale-105">
+              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900 mb-4">
+                <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
                 </svg>
-                <span>Free consultation and 1-month post-delivery support</span>
-              </li>
-              <li className="flex items-start md:col-span-2">
-                <svg className="w-5 h-5 text-yellow-300 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </div>
+              <h4 className="text-lg font-semibold mb-2 text-gray-800 dark:text-white">Free Support</h4>
+              <p className="text-gray-600 dark:text-gray-300">Consultation and 1-month post-delivery maintenance</p>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform hover:scale-105">
+              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900 mb-4">
+                <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
-                <span>Experienced in both web and mobile app development</span>
-              </li>
-            </ul>
+              </div>
+              <h4 className="text-lg font-semibold mb-2 text-gray-800 dark:text-white">Cross-Platform Skills</h4>
+              <p className="text-gray-600 dark:text-gray-300">Experienced in both web and mobile app development</p>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform hover:scale-105">
+              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900 mb-4">
+                <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                </svg>
+              </div>
+              <h4 className="text-lg font-semibold mb-2 text-gray-800 dark:text-white">Security Focus</h4>
+              <p className="text-gray-600 dark:text-gray-300">Built-in security best practices for all projects</p>
+            </div>
           </div>
         </div>
       </div>
