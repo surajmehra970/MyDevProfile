@@ -1,5 +1,4 @@
 # 👋 Hi, I'm Suraj Mehra — Web & Mobile App Developer
-
 <p align="center">
   <a href="https://linkedin.com/in/suraj-mehra-276b94189">
     <img src="https://img.shields.io/badge/LinkedIn-Suraj%20Mehra-blue?style=for-the-badge&logo=linkedin" />
