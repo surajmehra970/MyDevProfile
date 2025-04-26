@@ -8,6 +8,7 @@ import ServicesSection from './components/sections/ServicesSection';
 import PricingSection from './components/sections/PricingSection';
 import TestimonialsSection from './components/sections/TestimonialsSection';
 import ContactSection from './components/sections/ContactSection';
+import DesignShowcaseSection from './components/sections/DesignShowcaseSection';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <AboutSection />
         <ProjectsSection />
         <ServicesSection />
+        <DesignShowcaseSection />
         <PricingSection />
         <TestimonialsSection />
         <ContactSection />
