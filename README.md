@@ -1,60 +1,62 @@
-# Full-Stack Developer Portfolio
+# 👋 Hi, I'm Suraj Mehra — Web & Mobile App Developer
 
-A modern, responsive portfolio website for a full-stack developer specializing in web and mobile app development.
+<img src="https://your-image-link.com" width="200" align="right" style="border-radius: 50%;" alt="Suraj Mehra Avatar"/>
 
-## Features
+---
 
-- **Modern Design:** Clean, minimal, and tech-focused design with soft shadows, rounded cards, and modern typography
-- **Responsive:** Fully responsive layout that works on all device sizes
-- **Dark/Light Mode:** Toggle between dark and light themes
-- **Smooth Animations:** Page transitions and scroll animations using Framer Motion
-- **Modular Components:** Well-organized components for easy customization
+🔹 3+ years of experience building modern websites and mobile apps  
+🔹 Delivered 11 projects successfully with 6 happy clients  
+🔹 Passionate about turning ideas into scalable digital products  
 
-## Sections
+---
 
-- **Hero Section:** Bold introduction with clear call-to-action buttons
-- **About Me:** Developer introduction and skills highlights
-- **Projects:** Showcase of past work in a clean grid layout
-- **Services:** Overview of services offered
-- **Contact Form:** Simple form for potential clients to get in touch
+## 🚀 Skills
 
-## Technologies Used
+**Frontend Development**  
+- HTML5, CSS3, JavaScript (ES6+)
+- React.js, Next.js
+- Tailwind CSS, Bootstrap
 
-- **React:** UI library for building the interface
-- **TypeScript:** Type-safe JavaScript
-- **Tailwind CSS:** Utility-first CSS framework for styling
-- **Framer Motion:** Animation library
-- **Heroicons:** SVG icon collection
-- **React Scroll:** Smooth scrolling between sections
+**Backend Development**  
+- Node.js, Express.js
+- Java, Spring Boot
+- Firebase, MongoDB, MySQL
 
-## Getting Started
+**Mobile Development**  
+- Flutter
+- React Native
+- Android (Kotlin Basics)
 
-1. Clone the repository
-2. Install dependencies:
-   ```
-   npm install
-   ```
-3. Start the development server:
-   ```
-   npm start
-   ```
-4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Cloud & DevOps**  
+- AWS (EC2, S3, Lambda basics)
+- Firebase Hosting
+- Git, GitHub Actions
 
-## Customization
+**Other Tools**  
+- Figma (UI/UX Design)
+- Postman (API Testing)
+- VS Code, Android Studio
 
-- Edit personal information in the section components
-- Modify the color scheme in `tailwind.config.js`
-- Add your own projects in the ProjectsSection component
-- Update skills and services as needed
+---
 
-## Build for Production
+## 🛠️ Featured Projects
 
-To create an optimized production build:
+| Project | Description | Link |
+|:---|:---|:---|
+| **Urban Rest Leather** | Custom E-commerce Website for premium leather products | [View Project](https://urbanrestleather.com/) |
+| **Codemasters** | Web platform hosted on GCP showcasing dynamic web applications | [View Project](https://codemastersm--codemastersm.asia-east1.hosted.app/) |
+| **AutoPMS Print** | Print management web app with cloud database integration | [View Project](https://autopmsprint.web.app/) |
 
-```
-npm run build
-```
+---
 
-## License
+## 📫 Let's Connect!
 
-MIT
+- 📍 Location: Hyderabad, India
+- 📧 Email: [Surajmehra2000@gmail.com](mailto:Surajmehra2000@gmail.com)
+- 📞 Phone: [+91 7909055170](tel:+917909055170)
+- 🔗 [LinkedIn Profile](https://www.linkedin.com/in/suraj-mehra-276b94189)
+- 🖥️ [GitHub Profile](https://github.com/surajmehra970)
+
+---
+
+_“Building ideas into reality — one app at a time 🚀”_
