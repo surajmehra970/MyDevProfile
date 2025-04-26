@@ -168,137 +168,131 @@ const PricingSection: React.FC = () => {
           </div>
         </div>
 
-        {/* REVISED: Additional Services - More Concise UI */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-white">
-            🛠️ Additional Services (Add-ons)
-          </h3>
-          
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-            <table className="min-w-full">
-              <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
-                <tr className="hover:bg-gray-50 dark:hover:bg-gray-750">
-                  <td className="py-3 px-4 sm:px-6 text-gray-700 dark:text-gray-300 font-medium">Monthly Maintenance</td>
-                  <td className="py-3 px-4 sm:px-6 text-indigo-600 dark:text-indigo-400 font-semibold text-right">₹2,000 – ₹10,000</td>
-                </tr>
-                <tr className="hover:bg-gray-50 dark:hover:bg-gray-750">
-                  <td className="py-3 px-4 sm:px-6 text-gray-700 dark:text-gray-300 font-medium">Hosting & Domain Setup</td>
-                  <td className="py-3 px-4 sm:px-6 text-indigo-600 dark:text-indigo-400 font-semibold text-right">₹2,000 <span className="text-sm font-normal text-gray-500 dark:text-gray-400">(one-time)</span></td>
-                </tr>
-                <tr className="hover:bg-gray-50 dark:hover:bg-gray-750">
-                  <td className="py-3 px-4 sm:px-6 text-gray-700 dark:text-gray-300 font-medium">Logo Design</td>
-                  <td className="py-3 px-4 sm:px-6 text-indigo-600 dark:text-indigo-400 font-semibold text-right">₹1,500</td>
-                </tr>
-                <tr className="hover:bg-gray-50 dark:hover:bg-gray-750">
-                  <td className="py-3 px-4 sm:px-6 text-gray-700 dark:text-gray-300 font-medium">SEO Setup</td>
-                  <td className="py-3 px-4 sm:px-6 text-indigo-600 dark:text-indigo-400 font-semibold text-right">₹3,000 – ₹7,000</td>
-                </tr>
-                <tr className="hover:bg-gray-50 dark:hover:bg-gray-750">
-                  <td className="py-3 px-4 sm:px-6 text-gray-700 dark:text-gray-300 font-medium">WhatsApp Chat Integration</td>
-                  <td className="py-3 px-4 sm:px-6 text-indigo-600 dark:text-indigo-400 font-semibold text-right">₹1,000</td>
-                </tr>
-                <tr className="hover:bg-gray-50 dark:hover:bg-gray-750">
-                  <td className="py-3 px-4 sm:px-6 text-gray-700 dark:text-gray-300 font-medium">Google Maps Integration</td>
-                  <td className="py-3 px-4 sm:px-6 text-indigo-600 dark:text-indigo-400 font-semibold text-right">₹500</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+        {/* UNIFIED SECTION: Additional Services, Payment Terms, Why Choose Me */}
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-gray-700">
+            {/* Additional Services */}
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-white flex items-center">
+                <span className="bg-indigo-100 dark:bg-indigo-900/30 p-2 rounded-full mr-3">
+                  <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </span>
+                Add-on Services
+              </h3>
+              <ul className="space-y-3 mt-4">
+                <li className="flex justify-between items-center">
+                  <span className="text-gray-700 dark:text-gray-300">Monthly Maintenance</span>
+                  <span className="font-medium text-indigo-600 dark:text-indigo-400">₹2,000 – ₹10,000</span>
+                </li>
+                <li className="flex justify-between items-center">
+                  <span className="text-gray-700 dark:text-gray-300">Hosting & Domain Setup</span>
+                  <span className="font-medium text-indigo-600 dark:text-indigo-400">₹2,000</span>
+                </li>
+                <li className="flex justify-between items-center">
+                  <span className="text-gray-700 dark:text-gray-300">Logo Design</span>
+                  <span className="font-medium text-indigo-600 dark:text-indigo-400">₹1,500</span>
+                </li>
+                <li className="flex justify-between items-center">
+                  <span className="text-gray-700 dark:text-gray-300">SEO Setup</span>
+                  <span className="font-medium text-indigo-600 dark:text-indigo-400">₹3,000 – ₹7,000</span>
+                </li>
+                <li className="flex justify-between items-center">
+                  <span className="text-gray-700 dark:text-gray-300">WhatsApp Integration</span>
+                  <span className="font-medium text-indigo-600 dark:text-indigo-400">₹1,000</span>
+                </li>
+                <li className="flex justify-between items-center">
+                  <span className="text-gray-700 dark:text-gray-300">Google Maps</span>
+                  <span className="font-medium text-indigo-600 dark:text-indigo-400">₹500</span>
+                </li>
+              </ul>
+            </div>
 
-        {/* REVISED: Payment Terms - More Concise UI */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-white">
-            💳 Payment Terms
-          </h3>
-          
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="flex items-center border-b pb-4 md:pb-0 md:border-b-0 md:border-r border-gray-200 dark:border-gray-700 pr-4">
-                <div className="bg-indigo-100 dark:bg-indigo-900/30 rounded-full p-3 mr-4">
-                  <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <p className="font-medium text-gray-800 dark:text-white">50% Advance</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">To start the work</p>
-                </div>
-              </div>
-              <div className="flex items-center border-b pb-4 md:pb-0 md:border-b-0 md:border-r border-gray-200 dark:border-gray-700 pr-4">
-                <div className="bg-indigo-100 dark:bg-indigo-900/30 rounded-full p-3 mr-4">
-                  <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </div>
-                <div>
-                  <p className="font-medium text-gray-800 dark:text-white">50% Final</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Upon delivery</p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <div className="bg-indigo-100 dark:bg-indigo-900/30 rounded-full p-3 mr-4">
-                  <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            {/* Payment Terms */}
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-white flex items-center">
+                <span className="bg-indigo-100 dark:bg-indigo-900/30 p-2 rounded-full mr-3">
+                  <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
                   </svg>
-                </div>
-                <div>
-                  <p className="font-medium text-gray-800 dark:text-white">Payment Methods</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">UPI / Bank / Razorpay</p>
-                </div>
-              </div>
+                </span>
+                Payment Terms
+              </h3>
+              <ul className="space-y-6 mt-4">
+                <li>
+                  <div className="flex items-center mb-2">
+                    <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span className="font-medium text-gray-800 dark:text-white">50% Advance</span>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 ml-7">Required to start the work</p>
+                </li>
+                <li>
+                  <div className="flex items-center mb-2">
+                    <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span className="font-medium text-gray-800 dark:text-white">50% on Completion</span>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 ml-7">Due upon final delivery</p>
+                </li>
+                <li>
+                  <div className="flex items-center mb-2">
+                    <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span className="font-medium text-gray-800 dark:text-white">Payment Methods</span>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 ml-7">UPI / Bank Transfer / Razorpay</p>
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
 
-        {/* REVISED: Why Choose Me - More Concise UI */}
-        <div>
-          <h3 className="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-white">
-            ✨ Why Choose Me?
-          </h3>
-          
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="flex items-start">
-                <div className="bg-indigo-100 dark:bg-indigo-900/30 rounded-full p-2.5 mr-3 flex-shrink-0">
+            {/* Why Choose Me */}
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-white flex items-center">
+                <span className="bg-indigo-100 dark:bg-indigo-900/30 p-2 rounded-full mr-3">
                   <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                   </svg>
-                </div>
-                <p className="text-gray-700 dark:text-gray-300">Fast turnaround with high-quality work</p>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-indigo-100 dark:bg-indigo-900/30 rounded-full p-2.5 mr-3 flex-shrink-0">
-                  <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                </span>
+                Why Choose Me?
+              </h3>
+              <ul className="space-y-3 mt-4">
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                </div>
-                <p className="text-gray-700 dark:text-gray-300">Transparent and regular communication</p>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-indigo-100 dark:bg-indigo-900/30 rounded-full p-2.5 mr-3 flex-shrink-0">
-                  <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                  <span className="text-gray-700 dark:text-gray-300">Fast turnaround with quality work</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                </div>
-                <p className="text-gray-700 dark:text-gray-300">Clean, secure, and responsive code</p>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-indigo-100 dark:bg-indigo-900/30 rounded-full p-2.5 mr-3 flex-shrink-0">
-                  <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                  <span className="text-gray-700 dark:text-gray-300">Transparent communication</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                </div>
-                <p className="text-gray-700 dark:text-gray-300">Free consultation and 1-month post-delivery support</p>
-              </div>
-              <div className="flex items-start md:col-span-2">
-                <div className="bg-indigo-100 dark:bg-indigo-900/30 rounded-full p-2.5 mr-3 flex-shrink-0">
-                  <svg className="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  <span className="text-gray-700 dark:text-gray-300">Clean, secure, responsive code</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                </div>
-                <p className="text-gray-700 dark:text-gray-300">Experienced in both web and mobile app development</p>
-              </div>
+                  <span className="text-gray-700 dark:text-gray-300">Free consultation & support</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-indigo-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span className="text-gray-700 dark:text-gray-300">Web & mobile app expertise</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
