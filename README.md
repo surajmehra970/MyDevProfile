@@ -1,7 +1,5 @@
 # 👋 Hi, I'm Suraj Mehra — Web & Mobile App Developer
 
-<img src="https://your-image-link.com" width="200" align="right" style="border-radius: 50%;" alt="Suraj Mehra Avatar"/>
-
 ---
 
 🔹 3+ years of experience building modern websites and mobile apps  
