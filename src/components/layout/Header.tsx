@@ -78,6 +78,7 @@ const Header: React.FC = () => {
             <NavLink to="about">About</NavLink>
             <NavLink to="projects">Projects</NavLink>
             <NavLink to="services">Services</NavLink>
+            <NavLink to="pricing">Pricing</NavLink>
             <NavLink to="contact">Contact</NavLink>
             <button
               onClick={toggleDarkMode}
@@ -134,6 +135,7 @@ const Header: React.FC = () => {
             <NavLink to="about" onClick={closeMenu}>About</NavLink>
             <NavLink to="projects" onClick={closeMenu}>Projects</NavLink>
             <NavLink to="services" onClick={closeMenu}>Services</NavLink>
+            <NavLink to="pricing" onClick={closeMenu}>Pricing</NavLink>
             <NavLink to="contact" onClick={closeMenu}>Contact</NavLink>
           </div>
         </motion.div>
