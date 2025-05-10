@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .code-bracket {
+      fill: #3b82f6;
+    }
+    .code-circle {
+      fill: #1e40af;
+    }
+    .sm-text {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      fill: white;
+    }
+    .background {
+      fill: #0f172a;
+    }
+  </style>
+  
+  <!-- Background -->
+  <circle class="background" cx="256" cy="256" r="256"/>
+  
+  <!-- Circle -->
+  <circle class="code-circle" cx="256" cy="256" r="200"/>
+  
+  <!-- Code brackets -->
+  <path class="code-bracket" d="M182,122 L122,256 L182,390" stroke="#3b82f6" stroke-width="24" fill="none"/>
+  <path class="code-bracket" d="M330,122 L390,256 L330,390" stroke="#3b82f6" stroke-width="24" fill="none"/>
+  
+  <!-- SM Text -->
+  <text class="sm-text" x="256" y="280" font-size="120" text-anchor="middle">SM</text>
+</svg> 

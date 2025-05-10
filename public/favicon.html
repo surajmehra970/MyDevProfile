@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animated Favicon</title>
+  <link rel="icon" href="data:image/svg+xml,<?xml version='1.0' encoding='UTF-8'?>
+  <svg width='32' height='32' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'>
+    <style>
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+      }
+      @keyframes rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .code-bracket {
+        animation: pulse 3s infinite;
+        fill: #3b82f6;
+      }
+      .code-circle {
+        fill: #1e40af;
+        animation: rotate 20s linear infinite;
+        transform-origin: center;
+      }
+      .sm-text {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        fill: white;
+      }
+      .background {
+        fill: #0f172a;
+      }
+    </style>
+    <circle class='background' cx='256' cy='256' r='256'/>
+    <circle class='code-circle' cx='256' cy='256' r='200'/>
+    <path class='code-bracket' d='M182,122 L122,256 L182,390' stroke='#3b82f6' stroke-width='24' fill='none'/>
+    <path class='code-bracket' d='M330,122 L390,256 L330,390' stroke='#3b82f6' stroke-width='24' fill='none'/>
+    <text class='sm-text' x='256' y='280' font-size='120' text-anchor='middle'>SM</text>
+  </svg>">
+</head>
+<body>
+  <h1>Animated Favicon</h1>
+  <p>This page hosts the animated favicon for use in the developer portfolio.</p>
+</body>
+</html> 

@@ -126,13 +126,6 @@ const ContactSection: React.FC = () => {
       color: 'from-blue-500 to-indigo-500'
     },
     { 
-      icon: <PhoneIcon className="w-5 h-5" />, 
-      title: 'Phone', 
-      value: '+917909055170',
-      link: 'tel:+917909055170',
-      color: 'from-green-500 to-teal-500'
-    },
-    { 
       icon: <MapPinIcon className="w-5 h-5" />, 
       title: 'Location', 
       value: 'Hyderabad, India',
